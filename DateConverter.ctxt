@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=DateConverter
+comment0.text=\r\n\ The\ DateConverter\ class\ provides\ functionality\ to\ convert\ dates\ between\ different\ formats.\r\n\ It\ encapsulates\ methods\ for\ converting\ LocalDate\ objects\ to\ strings\ and\ vice\ versa\ using\ \r\n\ a\ specified\ date\ format.\r\n\r\n\ @author\ Gurvir\ Singh\ (k23010952),\ Hemchandra\ Erukulla\ (k23025212),\ Ching\ Lok\ Tsang\ (k23078461),\ Ihab\ Azhar\ (k23049043)\r\n\ \r\n\ @version\ 25/03/2024\r\n
+comment1.params=
+comment1.target=DateConverter()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ DateConverter.\r\n\ Initializes\ the\ DateTimeFormatter\ with\ the\ specified\ date\ format.\r\n
+comment2.params=date
+comment2.target=java.lang.String\ toString(java.time.LocalDate)
+comment2.text=\r\n\ Converts\ a\ LocalDate\ object\ to\ a\ string\ using\ the\ specified\ date\ format.\r\n\ \r\n\ @param\ date\ The\ LocalDate\ object\ to\ convert\r\n\ @return\ The\ string\ representation\ of\ the\ date\r\n
+comment3.params=string
+comment3.target=java.time.LocalDate\ fromString(java.lang.String)
+comment3.text=\r\n\ Converts\ a\ string\ representation\ of\ a\ date\ to\ a\ LocalDate\ object.\r\n\ \r\n\ @param\ string\ The\ string\ representation\ of\ the\ date\r\n\ @return\ The\ LocalDate\ object\r\n
+numComments=4

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ChartController
+comment0.text=\r\n\ The\ ChartController\ class\ manages\ data\ and\ operations\ related\ to\ a\ LineChart\ visualization.\r\n\ It\ facilitates\ setting\ data\ for\ the\ chart,\ handling\ data\ updates,\ and\ configuring\ chart\ properties.\r\n\ This\ class\ collaborates\ with\ the\ DateConverter\ utility\ for\ handling\ date\ conversions.\r\n\r\n\ @author\ Gurvir\ Singh\ (k23010952),\ Hemchandra\ Erukulla\ (k23025212),\ Ching\ Lok\ Tsang\ (k23078461),\ Ihab\ Azhar\ (k23049043)\r\n\ \r\n\ @version\ 25/03/2024\r\n
+comment1.params=chart\ dataToDisplay
+comment1.target=void\ setDataForGraph(javafx.scene.chart.LineChart,\ java.util.ArrayList)
+comment1.text=\r\n\ Sets\ the\ data\ to\ be\ displayed\ on\ the\ LineChart.\r\n\ \r\n\ @param\ chart\ The\ LineChart\ object\ to\ which\ the\ data\ will\ be\ added\r\n\ @param\ dataToDisplay\ The\ ArrayList\ of\ CovidData\ objects\ representing\ the\ data\ to\ be\ displayed\r\n
+numComments=2

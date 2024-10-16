@@ -1,0 +1,31 @@
+#arrowButton {
+    -fx-font-family: "Times New Roman", Times, serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold; /* Set the text style to bold */
+    
+    -fx-border-color: #242a2b;
+    -fx-border-width: 0.5px; /* Set the border width to 2 pixels */
+    -fx-border-radius: 3;
+     
+    -fx-background-color: #068694; /* Change the background color to dark cyan */
+    -fx-background-radius: 3;
+}
+
+#arrowButton:hover {
+    -fx-scale-x: 1.01;
+    -fx-scale-y: 1.02;
+    
+    -fx-font: 14px "Serif";
+    -fx-font-weight: bold; /* Set the text style to bold */
+    
+    -fx-border-color: #3f4b4d; /* Change the border color to dark but lighter blueish black */
+    -fx-border-width: 0.5px; /* Set the border width to 2 pixels */
+    -fx-border-radius: 3;
+    
+    -fx-text-fill: #003c42;
+    
+    -fx-effect: dropshadow(gaussian, rgba(225,225,225,0.5), 10, 0.5, 2, 2); /* Apply drop shadow effect */
+    
+    -fx-background-color: #029cad; /* Change the background color to a lighter cyan colour*/
+    -fx-background-radius: 3;
+}

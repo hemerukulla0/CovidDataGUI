@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=TableController
+comment0.text=\r\n\ The\ TableController\ class\ manages\ data\ presentation\ and\ sorting\ functionality\ for\ the\ TableView\r\n\ displaying\ COVID-19\ statistics\ for\ a\ selected\ borough.\ It\ allows\ users\ to\ view\ data\ by\ various\ statistics\r\n\ and\ sorts\ the\ data\ accordingly.\ This\ class\ interacts\ with\ a\ StatisticsCalculator\ to\ fetch\ and\ process\ data.\r\n\r\n\ @author\ Gurvir\ Singh\ (k23010952),\ Hemchandra\ Erukulla\ (k23025212),\ Ching\ Lok\ Tsang\ (k23078461),\ Ihab\ Azhar\ (k23049043)\r\n\ \r\n\ @version\ 25/03/2024\r\n
+comment1.params=calc\ boroughName
+comment1.target=void\ setBoundsForData(StatisticsCalculator,\ java.lang.String)
+comment1.text=\r\n\ Sets\ the\ title\ label\ and\ loads\ data\ for\ the\ selected\ borough\ into\ the\ TableView.\r\n\ \r\n\ @param\ calc\ The\ StatisticsCalculator\ object\ used\ to\ fetch\ data\r\n\ @param\ boroughName\ The\ name\ of\ the\ selected\ borough\r\n
+comment2.params=
+comment2.target=void\ initialize()
+comment2.text=\r\n\ Sets\ up\ the\ initial\ state\ of\ the\ TableView\ and\ ChoiceBox\ when\ the\ FXML\ is\ loaded.\r\n
+comment3.params=calc
+comment3.target=javafx.collections.ObservableList\ getData(StatisticsCalculator)
+comment3.text=\r\n\ Retrieves\ data\ for\ the\ selected\ borough\ from\ the\ StatisticsCalculator.\r\n\ \r\n\ @param\ calc\ The\ StatisticsCalculator\ object\ used\ to\ fetch\ data\r\n\ @return\ An\ ObservableList\ of\ CovidData\ objects\ representing\ the\ data\ for\ the\ selected\ borough\r\n
+comment4.params=
+comment4.target=void\ sortTable()
+comment4.text=\r\n\ Sorts\ the\ TableView\ based\ on\ the\ selected\ option\ in\ the\ ChoiceBox.\r\n
+numComments=5

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableController">
+   <children>
+      <TableView fx:id="database" layoutX="24.0" layoutY="38.0" prefHeight="356.0" prefWidth="651.0">
+         <columns>
+            <TableColumn fx:id="dateColumn" prefWidth="75.0" text="Date" />
+            <TableColumn prefWidth="75.0" text="Google mobility data">
+               <columns>
+                  <TableColumn fx:id="retailColumn" prefWidth="184.0" text="Retail and recreation" />
+                  <TableColumn fx:id="groceryColumn" prefWidth="75.0" text="Grocery and pharmacy" />
+                  <TableColumn fx:id="parksColumn" prefWidth="75.0" text="Parks" />
+                  <TableColumn fx:id="transitColumn" prefWidth="75.0" text="Transit stations" />
+                  <TableColumn fx:id="workplacesColumn" prefWidth="75.0" text="Workplaces" />
+                  <TableColumn fx:id="residentialColumn" prefWidth="107.0" text="Residential" />
+               </columns>
+            </TableColumn>
+            <TableColumn fx:id="newCasesColumn" prefWidth="39.4285888671875" text="New cases" />
+            <TableColumn fx:id="totalCasesColumn" prefWidth="80.5714111328125" text="Total cases" />
+            <TableColumn fx:id="newDeathsColumn" prefWidth="75.0" text="new deaths" />
+         </columns>
+      </TableView>
+      <Label fx:id="titleLabel" alignment="TOP_CENTER" layoutX="21.0" layoutY="6.0" prefHeight="26.0" prefWidth="659.0" text="Data For:" underline="true">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choiceBox" layoutX="314.0" layoutY="418.0" prefWidth="150.0" />
+      <Label layoutX="253.0" layoutY="422.0" text="Sort by:" />
+   </children>
+</AnchorPane>

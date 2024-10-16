@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ApplicationWindow
+comment0.text=\r\n\ This\ class\ loads\ the\ necessary\ FXML\ files\ to\ construct\ different\ panels\ of\ the\ application\r\n\ and\ initialises\ the\ main\ controller\ to\ manage\ the\ application's\ functionality.\r\n\ \r\n\ This\ class\ sets\ up\ the\ main\ window,\ loads\ the\ panels,\ and\ configures\ the\ scene\ \r\n\ with\ the\ required\ components.\ Additionally,\ it\ handles\ the\ application's\ icon\ and\ \r\n\ ensures\ the\ window's\ responsiveness.\r\n\r\n\ @author\ Gurvir\ Singh\ (k23010952),\ Hemchandra\ Erukulla\ (k23025212),\ Ching\ Lok\ Tsang\ (k23078461),\ Ihab\ Azhar\ (k23049043)\r\n\ \r\n\ @version\ 25/03/2024\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment1.text=\r\n\ Starts\ the\ JavaFX\ application.\r\n\ \r\n\ @param\ stage\ The\ primary\ stage\ for\ the\ application\r\n\ @throws\ IOException\ if\ an\ error\ occurs\ during\ FXML\ loading\r\n
+comment2.params=
+comment2.target=void\ panelLoader()
+comment2.text=\r\n\ Loads\ panels\ from\ FXML\ files\ and\ adds\ them\ to\ the\ panels\ ArrayList.\r\n\ \r\n\ @throws\ IOException\ if\ an\ error\ occurs\ during\ FXML\ loading\r\n
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4

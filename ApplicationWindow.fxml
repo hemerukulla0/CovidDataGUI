@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+   <top>
+      <HBox prefHeight="100.0" prefWidth="249.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="747.0" />
+            <HBox prefHeight="100.0" prefWidth="209.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="46.0" text="From:" />
+                  <DatePicker fx:id="fromDatePicker" prefHeight="25.0" prefWidth="125.0" showWeekNumbers="true" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="167.0">
+               <children>
+                  <Label minHeight="25.0" prefHeight="25.0" prefWidth="32.0" text="To:" />
+                  <DatePicker fx:id="toDatePicker" prefHeight="25.0" prefWidth="125.0" showWeekNumbers="true" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="103.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="103.0" prefWidth="339.0">
+               <children>
+                  <Button id="arrowButton" fx:id="backButton" alignment="CENTER" contentDisplay="RIGHT" disable="true" minHeight="0.0" mnemonicParsing="false" onAction="#goToPreviousPanel" prefHeight="25.0" prefWidth="75.0" stylesheets="@buttonStyles.css" text="&lt;" />
+                  <Label fx:id="panelNumberLabel" alignment="CENTER" contentDisplay="BOTTOM" minHeight="25.0" prefHeight="25.0" prefWidth="161.0" text="Panel number:">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="103.0" prefWidth="969.0">
+               <children>
+                  <Button id="arrowButton" fx:id="forwardButton" alignment="CENTER" disable="true" minHeight="0.0" mnemonicParsing="false" onAction="#goToNextPanel" prefHeight="25.0" prefWidth="75.0" stylesheets="@buttonStyles.css" text="&gt;" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="235.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </right>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Text layoutX="70.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Covid-19 Data Statistics app To get started, please select a date range using the 'From' and 'To' dropdowns above." textAlignment="CENTER" wrappingWidth="459.23828125">
+                     <font>
+                        <Font size="20.0" />
+                     </font></Text>
+                  <ImageView fitHeight="260.0" fitWidth="345.0" layoutX="-172.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@covid_viruses_transparent.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></HBox>
+   </center>
+</BorderPane>

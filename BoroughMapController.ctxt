@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=BoroughMapController
+comment0.text=\r\n\ The\ BoroughMapController\ class\ manages\ the\ functionality\ of\ the\ Borough\ Map\ in\ the\ application.\ \r\n\ It\ allows\ users\ to\ select\ a\ borough\ and\ obtain\ data\ within\ it.\ Additionally,\ it\ visualizes\ \r\n\ the\ number\ of\ deaths\ in\ each\ borough\ through\ a\ heat\ map\ representation.\r\n\ \r\n\ @author\ Gurvir\ Singh\ (k23010952),\ Hemchandra\ Erukulla\ (k23025212),\ Ching\ Lok\ Tsang\ (k23078461),\ Ihab\ Azhar\ (k23049043)\r\n\ \r\n\ @version\ 25/03/2024\r\n
+comment1.params=root\ calc
+comment1.target=void\ initialize(javafx.scene.layout.AnchorPane,\ StatisticsCalculator)
+comment1.text=\r\n\ Initializes\ the\ Borough\ Map\ by\ finding\ SVG\ paths\ representing\ boroughs.\r\n\ \r\n\ @param\ root\ The\ AnchorPane\ containing\ the\ Borough\ Map\r\n\ @param\ calc\ The\ StatisticsCalculator\ used\ to\ calculate\ data\ for\ boroughs\r\n
+comment2.params=event
+comment2.target=void\ showBoroughData(javafx.scene.input.MouseEvent)
+comment2.text=\r\n\ Handles\ the\ event\ when\ a\ borough\ on\ the\ map\ is\ clicked\ to\ show\ its\ data.\r\n\ \r\n\ @param\ event\ The\ MouseEvent\ indicating\ a\ click\ on\ a\ borough\r\n\ @throws\ IOException\ If\ there\ is\ an\ error\ loading\ the\ table.fxml\ file\r\n
+comment3.params=node\ svgPaths
+comment3.target=void\ findSVGPaths(javafx.scene.Node,\ java.util.ArrayList)
+comment3.text=\r\n\ Finds\ SVG\ paths\ representing\ boroughs\ within\ the\ provided\ node.\r\n\ \r\n\ @param\ node\ \ \ \ \ The\ node\ to\ search\ for\ SVG\ paths\r\n\ @param\ svgPaths\ The\ list\ to\ store\ found\ SVG\ paths\r\n
+comment4.params=calc
+comment4.target=void\ updateMap(StatisticsCalculator)
+comment4.text=\r\n\ Updates\ the\ heat\ map\ representation\ of\ the\ boroughs\ based\ on\ the\ number\ of\ deaths.\r\n\ \r\n\ @param\ calc\ The\ StatisticsCalculator\ used\ to\ calculate\ the\ number\ of\ deaths\ for\ each\ borough\r\n
+comment5.params=fraction
+comment5.target=javafx.scene.paint.Color\ interpolateColor(double)
+comment5.text=\r\n\ Interpolates\ a\ color\ between\ start\ and\ end\ colors\ based\ on\ the\ given\ fraction.\r\n\ \r\n\ @param\ fraction\ The\ fraction\ determining\ the\ position\ between\ start\ and\ end\r\n\ @return\ The\ interpolated\ color\r\n
+numComments=6
